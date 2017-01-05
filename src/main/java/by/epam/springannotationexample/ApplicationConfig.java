@@ -14,6 +14,11 @@ public class ApplicationConfig {
     }
 
     @Bean
+    public static ProfilingHandlerBeanPostProcessor profilingHandlerBeanPostProcessor(){
+        return new ProfilingHandlerBeanPostProcessor();
+    }
+
+    @Bean
     public MomQuoter momQuoter(){
         return new MomQuoter();
     }

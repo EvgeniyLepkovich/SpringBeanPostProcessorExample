@@ -3,6 +3,7 @@ package by.epam.springannotationexample;
 /**
  * Created by Yayheniy_Lepkovich on 1/5/2017.
  */
+@Profiling
 public class MomQuoter implements Quoter {
     @RandomInt(min = 3, max = 5)
     private int repeat;
